@@ -2,7 +2,8 @@
   <h1>Committees in the {{model.0.chamber}}</h1>
 
 {{#each model as |committee|}}
-  <li><h4>{{committee.name}}</h4></li>
+    <li><h4>{{committee.name}}</h4></li>
+    {{#link-to 'subcommittees' committee.committee_id committee.name}}<p>view subcommittees</p>{{/link-to}} <!--commitee.name or whatever passed here gets bundled and becomes the value to the key created in router.js path extension.-->
 {{/each}}
 
 </div>
