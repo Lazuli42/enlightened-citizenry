@@ -1,0 +1,10 @@
+<h2>Browse Committes in:</h2>
+<div class="committees">
+  <label for="house">House</label>
+  {{input type="checkbox" checked=false id="house" name="house"}}
+
+  <label for="senate">Senate</label>
+  {{input type="checkbox" checked=false id="senate" name="senate"}}
+
+  <button class="btn btn-primary" {{action 'searchCommittees' }}>Search</button>
+</div>
