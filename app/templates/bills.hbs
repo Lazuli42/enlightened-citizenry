@@ -1,0 +1,9 @@
+{{outlet}}
+<div class="container">
+  {{#link-to 'index'}}<span class="glyphicon glyphicon-home"></span>{{/link-to}}
+  {{#each model as |bill|}}
+      <li><h4>{{bill.official_title}}</h4></li>
+      <h6>Bill introduced on: {{bill.introduced_on}}</h6>
+      <h6>Congress last acted on: {{bill.last_action_at}}</h6><br>
+  {{/each}}
+</div>

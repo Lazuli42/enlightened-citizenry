@@ -8,6 +8,9 @@ export default Ember.Route.extend({
     },
     searchCommittees(prams) {
       this.transitionTo('committees', prams.chamber);
+    },
+    goToBills() {
+      this.transitionTo('bills');
     }
   }
 });

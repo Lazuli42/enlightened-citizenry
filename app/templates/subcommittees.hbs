@@ -1,6 +1,10 @@
 <div class="container">
+  {{#if model}}
   <h1>Subcommittees of {{commiteeName}}</h1>
   {{#each model as |subcommittee|}}
     <li><h4>{{subcommittee.name}}</h4></li>
   {{/each}}
+  {{else}}
+    <h2>No subcommittees found.</h2>
+  {{/if}}
 </div>
