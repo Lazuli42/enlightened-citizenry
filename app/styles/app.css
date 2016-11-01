@@ -1,0 +1,13 @@
+body {
+  background-color: #728A99;
+  color: #ABCFE5;
+}
+
+nav {
+  background-color: #31424C;
+}
+
+.btn-warning {
+  background-color: #E5E5A0;
+  color: #31424C;
+}
